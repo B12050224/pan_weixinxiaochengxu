@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/setmeal/setmeal",
+    "pages/news/news",
+    "pages/detail/detail",    
+    "pages/discriminate/discriminate",
+    "pages/lianxi/lianxi",    
+    "pages/solve/solve",    
+    "pages/product/product"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#14BAF1",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#14baf1",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/Home page2.png",
+        "selectedIconPath": "icons/shouye.png"
+      },
+      {
+        "pagePath": "pages/product/product",
+        "text": "产品展示",
+        "iconPath": "icons/Product.png",
+        "selectedIconPath": "icons/Product-display.png"
+      },
+      {
+        "pagePath": "pages/lianxi/lianxi",
+        "text": "联系我们",
+        "iconPath": "icons/Contact-us2.png",
+        "selectedIconPath": "icons/Contact-us3.png"
+      }
+    ]
+  }
+}

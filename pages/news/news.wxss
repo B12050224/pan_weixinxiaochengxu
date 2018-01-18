@@ -1,0 +1,80 @@
+#news{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.news{
+    width:750rpx;
+    height:340rpx;
+}
+.news-hang{
+    width:695rpx;
+    height:68rpx;
+    margin:0 auto;
+    font-size:26rpx;
+    line-height:68rpx;
+    margin-left:42rpx;
+    color:#14BAF1;
+    border-bottom:2rpx solid #F2F2F2;
+}
+/**新闻列表开始**/
+.newslist{
+    width:700rpx;
+    padding-left:36rpx;
+    padding-right:14rpx;
+    background-color:#FFFFFF;
+}
+.newslist-zhuti{
+    width:700rpx;
+    height: 72rpx;
+    border-bottom:2rpx solid #F2F2F2;
+}
+.newslist-lie{
+    float:left;
+    width:12rpx;
+    height:12rpx;
+    border-top:3rpx solid #89888B;
+    border-right:3rpx solid #89888B;
+    transform:rotate(45deg);
+    margin-right:26rpx;
+    margin-top:26rpx;
+    color:#353535;
+}
+.news-fl{
+    display:block;
+    height: 62rpx;
+    line-height:70rpx;
+    width: 390rpx;
+    float:left;
+    cursor: pointer;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/    
+    text-align:left;
+    font-size:26rpx;
+    color:#353535;
+}
+.news-fr{
+    display:block;
+    height: 72rpx;
+    line-height: 72rpx;
+    width: 260rpx;
+    float:right;
+    font-size:24rpx;    
+    text-align:right;
+    color:#353535;
+}
+/**新闻列表结束**/
+
+.graphics-none{
+    float:left;
+    height:30rpx;
+    line-height:30rpx;
+    width:750rpx;
+    margin:0 auto;
+    text-align:center;
+    color:#888888;
+    font-size:24rpx;
+    margin-top:20rpx;
+    margin-bottom:30rpx;
+}

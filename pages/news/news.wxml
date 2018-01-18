@@ -1,0 +1,14 @@
+<view id='news'>
+    <image src="{{imgUrl}}" mode="aspectFill" class='news'></image>
+    <view class='news-hang'>行业资讯</view>
+    <!--新闻列表-->
+    <scroll-view class='newslist' scroll-y="true" bindscrolltolower="searchScrollLower" style='height:380px' scroll-top="{{scrollTop}}" lower-threshold="20"px>
+        <navigator class='newslist-zhuti' url="../discriminate/discriminate?id={{item.title}}&id1={{item.id}}" wx:for='{{dongxi}}' wx:key='index'>
+            <view class='newslist-lie'></view>
+            <text decode="{{true}}" space="{{true}}" class='news-fl'>{{item.title}}</text>
+            <text class='news-fr'>{{item.time}}</text>
+        </navigator>
+        <view class="graphics-none" wx-if="{{searchLoading}}">上拉加载更多数据</view>
+        <view class="graphics-none" wx-if='{{!searchLoading}}'>没有更多数据了~</view>
+    </scroll-view>
+</view>

@@ -1,0 +1,90 @@
+#solve{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.solve{
+    width:750rpx;
+    height:240rpx;
+}
+
+/**解决方案开始**/
+.prodis{
+    width:704rpx;
+    height:64rpx;
+    margin:0 auto;
+    border-bottom: 2rpx solid #e8e8e8;
+}
+.prodis>text{
+    display:inline-block;
+    width:686rpx;
+    height:64rpx; 
+    text-align:left;
+    font-size:24rpx;
+    line-height: 64rpx;
+    color:#101010;
+}
+/**解决方案结束**/
+
+.solve-los{
+    width:730rpx;
+    margin-left:20rpx;
+    margin-top:20rpx;
+}
+.solve-tao{
+    width:730rpx;
+    height:104rpx;
+    padding-bottom:14rpx;
+}
+.solve-tao>image{
+    display:block;
+    float:left;
+    height: 104rpx;
+    width: 188rpx;
+    margin-right:22rpx;
+}
+.listext2{
+    float:left;
+    width:520rpx;
+    height:104rpx;
+}
+.listext-t{
+    padding-left:12rpx; 
+    width:500rpx;
+    height:40rpx;
+    display:block;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+    line-height:40rpx;
+    margin-top: 0px;
+    font-size:26rpx;
+    color:#353535;  
+    margin-bottom:12rpx;    
+}
+.listext-b{
+    display:block;
+    font-size:22rpx;
+    color:#878787;
+    line-height:52rpx;
+    height:52rpx;
+    width:500rpx;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+    margin-top:0px;
+    padding-left:10rpx;
+}
+
+.graphics-none{
+    float:left;
+    height:30rpx;
+    line-height:30rpx;
+    width:750rpx;
+    margin:0 auto;
+    text-align:center;
+    color:#888888;
+    font-size:24rpx;
+    margin-top:20rpx;
+    margin-bottom:30rpx;
+}

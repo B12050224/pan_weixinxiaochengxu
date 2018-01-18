@@ -1,0 +1,22 @@
+#setmeal{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.setmeal-img{
+    display:block;
+    width:750rpx;
+    height:340rpx;
+}
+.setmeal-con{
+    text-indent:35rpx;
+    width:710rpx;
+    padding-left:20rpx;
+    padding-right:20rpx;
+}
+.setmeal-con>text{
+    display:block;
+    font-size:26rpx;
+    color:#353535;
+    line-height:50rpx;    
+}

@@ -1,0 +1,60 @@
+@import '../../common.wxss' 
+/*联系控件开始*/
+#control{
+    width:750rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.contact{
+    width:260rpx;
+    height:28rpx;
+    margin-top:38rpx;
+    margin-left:36rpx;
+}
+.contact-con{
+    display:inline-block;
+    width:184rpx;
+    height:28rpx;
+    font-size:28rpx;
+    color:#6DC7ED;
+    line-height:28rpx; 
+    font-weight:700; 
+}
+.contact-tact{
+    display:inline-block;
+    width:76rpx;
+    height:28rpx;
+    font-size:28rpx;
+    color:#6DC7ED;
+    line-height:28rpx; 
+    font-weight:700; 
+}
+.control-img{
+    width:490rpx;
+    height:252rpx;
+    margin-top:60rpx;
+}
+.control-main{
+    width:644rpx;
+    margin-left:106rpx;
+    margin-top:40rpx;
+}
+.control-main-xinxi{
+    width:644rpx;
+    margin-bottom:36rpx; 
+}
+.control-main-xinxi>image{
+    float:left;
+    width:28rpx;
+    height:30rpx; 
+    margin-right:20rpx;
+}
+.control-main-xinxi>text{
+    float:left;
+    padding-right:20rpx;
+    font-size:24rpx;
+    line-height:40rpx;
+    color:#838292; 
+}
+/*联系控件结束*/

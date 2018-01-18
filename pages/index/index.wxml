@@ -1,0 +1,61 @@
+<!--index.wxml-->   
+<view id='index'>
+    <!--轮播图-->    
+    <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="500">    
+    <block wx:for="{{movies}}" wx:for-index="index">    
+        <swiper-item>    
+        <image src="{{item.pic}}" class="slide-image" mode="aspectFill"/>    
+        </swiper-item>    
+    </block>    
+    </swiper>   
+
+    <!--中部导航-->
+    <view class='central'>
+        <navigator url="{{item.jump}}" open-type="{{index == 0||index == 3 ? 'switchTab':'navigate'}}" wx:for='{{fenlei}}' wx:key='index'>
+            <image src="{{item.icon}}" mode="aspectFill"></image>
+            <text>{{item.name}}</text>
+        </navigator>
+    </view>
+
+    <!--产品展示-->
+    <navigator url="../product/product" open-type="switchTab" class='prodis'>
+        <text class='prodis-gong'>产品展示</text>
+        <text class='prodis-com' decode="{{true}}" space="{{true}}">查看全部  {{gt}}</text>
+    </navigator>       
+    <!--图文列表(水平)-->
+    <view class="scroll-view_H">
+        <scroll-view scroll-x='true' style='height: 260rpx;overflow-x: scroll'>  
+            <navigator url="../detail/detail?index={{item.id}}" wx:for='{{standars}}' wx:key='index' class='standars'>
+                <image src="{{item.pic}}" mode="aspectFill"></image>
+            </navigator>
+        </scroll-view> 
+    </view>
+    <view class='xiahua'></view>
+    <!--新闻中心-->
+    <navigator class='prodis' url="../news/news">
+        <text class='prodis-gong'>新闻中心</text>
+        <text class='prodis-com'>查看全部  {{gt}}</text>
+    </navigator>
+    <!--新闻列表-->
+    <view class='newslist'>
+        <navigator class='newslist1' url="../discriminate/discriminate?id={{item.title}}&id1={{item.id}}" wx:for='{{newList}}' wx:key='index'>
+            <view class='newslist2'></view>
+            <text decode="{{true}}" space="{{true}}" class='newsfl'>{{item.title}}</text>
+            <text class='newsfr'>{{item.time}}</text>
+        </navigator>
+    </view>
+    <!--解决方案-->
+    <navigator class='prodis' url="../solve/solve">
+        <text class='prodis-gong'>解决方案</text>
+        <text class='prodis-com' decode="{{true}}" space="{{true}}">查看全部  {{gt}}</text>
+    </navigator>
+    <!--图文列表(垂直)-->
+    <navigator class='listext' url="../setmeal/setmeal?index={{item.id}}" wx:for='{{list24}}' wx:key='index'>
+        <image src="{{item.pic}}" alt=""></image>
+        <view class='listext2'>
+            <text class='listext-t'>{{item.title}}</text>
+            <text class='listext-b'>{{item.content}}</text>
+        </view>
+    </navigator>
+</view>
+ 

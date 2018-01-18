@@ -1,0 +1,188 @@
+/**index.wxss**/
+#index{
+    display: -webkit-flex;
+    flex-direction:column;
+}
+/**轮播图样式**/
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+/**中部导航样式开始**/
+.central{
+    width:680rpx;
+    height: 117rpx;
+    padding-top:15rpx;
+    padding-left:78rpx;
+    border-top:20rpx solid #F2F2F2;
+    border-bottom:20rpx solid #F2F2F2;
+}
+.central>navigator{
+    float:left;
+    margin-right:70rpx;
+    border-radius:20rpx;
+}
+.central image{
+    display:block;
+    width: 60rpx;
+    height: 60rpx;
+    margin-left:16rpx;
+}
+.central text{
+    height: 22rpx;
+    width:92rpx;
+    margin-top:16rpx;
+    font-size:24rpx;
+    color: #333;
+}
+/**中部导航样式结束**/
+
+/**产品展示开始**/
+.prodis{
+    width:704rpx;
+    height:64rpx;
+    margin:0 auto;
+    border-bottom: 2rpx solid #e8e8e8;
+}
+.prodis-gong{
+    display:inline-block;
+    width:578rpx;
+    margin-top:20rpx;
+    height:24rpx; 
+    text-align:left;
+    font-size:28rpx;
+    line-height: 24rpx;
+    color:#14BAF1;
+}
+.prodis-com{
+    display:inline-block;
+    margin-top:20rpx;
+    font-size:24rpx;
+    color:#888888;
+}
+/**产品展示结束**/
+.xiahua{
+    width:750rpx;
+    height:20rpx;
+    background-color:#F2F2F2;
+}
+/**图文列表(水平)开始**/
+.scroll-view_H{
+  white-space:nowrap;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  background-color: white;
+}
+.standars{
+    padding: 10rpx;
+    margin-left: 10rpx;
+    width: 240rpx;
+    height: 240rpx;
+    display: inline-block;
+}
+.standars image{
+    width: 100%;
+    height: 100%;
+}
+/**图文列表(水平)结束**/
+/**新闻列表开始**/
+.newslist{
+    width:700rpx;
+    padding-top:8rpx;
+    padding-left:36rpx;
+    padding-right:14rpx;
+    border-bottom:20rpx solid #F2F2F2;
+}
+.newslist1{
+    width:700rpx;
+    height: 72rpx;
+}
+.newslist2{
+    float:left;
+    width:12rpx;
+    height:12rpx;
+    border-top:3rpx solid #605F5F;
+    border-right:3rpx solid #605F5F;
+    transform:rotate(45deg);
+    margin-right:26rpx;
+    margin-top:26rpx;
+}
+.newsfl{
+    display:block;
+    height: 72rpx;
+    width: 390rpx;
+    float:left;
+    cursor: pointer;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+    font-size:26rpx;
+    line-height: 72rpx;
+    text-align:left;
+    color:#353535;
+}
+.newsfr{
+    display:block;
+    height: 72rpx;
+    width: 260rpx;
+    float:right;
+    font-size:26rpx;
+    line-height: 72rpx;
+    text-align:right;
+    color:#353535;
+}
+/**新闻列表结束**/
+
+/*图文列表(垂直)开始*/
+.listext{
+    width:730rpx;
+    height:104rpx;
+    padding-left:20rpx;
+    padding-top:20rpx;
+    padding-bottom:18rpx;
+}
+.listext image{
+    display:block;
+    float:left;
+    height: 104rpx;
+    width: 188rpx;
+    margin-right:22rpx;
+}
+.listext2{
+    float:left;
+    width:520rpx;
+    height:104rpx;
+}
+.listext-t{
+    padding-left:12rpx; 
+    width:500rpx;
+    height:40rpx;
+    display:block;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+    line-height:40rpx;
+    margin-top: 0px;
+    font-size:26rpx;
+    color:#353535;  
+    margin-bottom:12rpx;    
+}
+.listext-b{
+    display:block;
+    font-size:22rpx;
+    color:#878787;
+    line-height:52rpx;
+    height:52rpx;
+    width:500rpx;
+    overflow: hidden;/*超出部分隐藏*/
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+    margin-top:0px;
+    padding-left:10rpx;
+}
+/*图文列表(垂直)结束*/

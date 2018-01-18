@@ -1,0 +1,65 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.6.6",
+	"appid": "wxa728f4fc0e0c1c22",
+	"projectname": "%E5%B1%95%E7%A4%BA%E7%B1%BB%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "产品展示页",
+					"pathName": "pages/product/product",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "详情页",
+					"pathName": "pages/detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "企业新闻页",
+					"pathName": "pages/news/news",
+					"query": ""
+				},
+				{
+					"id": 3,
+					"name": "解决方案页",
+					"pathName": "pages/solve/solve",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "联系我们页",
+					"pathName": "pages/lianxi/lianxi",
+					"query": ""
+				}
+			]
+		}
+	}
+}

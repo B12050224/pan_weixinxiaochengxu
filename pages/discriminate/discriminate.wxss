@@ -1,0 +1,23 @@
+#discriminate{
+    display: flex;
+    width:750rpx;
+    flex-direction: column;
+    justify-content:center;
+}
+.discriminate-img{
+    width:750rpx;
+    height:412rpx;
+    margin-bottom:20rpx;
+}
+.setthree{
+    width:668rpx;
+    padding-left:34rpx;
+    padding-right:48rpx;
+}
+.setthree>text{
+    display:block;
+    font-size:28rpx;
+    color:#0A0A0A;
+    line-height:44rpx;
+    text-indent:35rpx;
+}

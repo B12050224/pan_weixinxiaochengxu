@@ -1,0 +1,16 @@
+<view id='detail'>
+    <view class='detail'>
+        <image src='{{movies[0].pic}}'></image>   
+        <view class='detail-content'>
+            <text>{{movies[0].brief}}</text>
+        </view>
+    </view>
+    <text class='detail-shao' wx-if='{{imgList1.length!=0 || movies[0].content}}'>详情介绍</text>
+    <text class='detail-xia' wx-if='{{imgList1.length!=0 || movies[0].content}}'></text>
+    <view class='detail-img' wx:for='{{imgList1}}' wx-if='{{imgList1.length!=0}}'>
+        <image src='{{item}}' mode="widthFix"></image>
+    </view>  
+    <view class='datail-content'>{{movies[0].content}}</view>  
+    <text class='graphics1' wx-if='{{imgList1.length!=0}}'>已经到底了~</text>
+</view>
+

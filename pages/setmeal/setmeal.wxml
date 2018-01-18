@@ -1,0 +1,6 @@
+<view id='setmeal'>
+    <image class='setmeal-img' src='{{movies[0].pic}}'></image>
+    <view class='setmeal-con'>
+        <text>{{movies[0].content}}</text>
+    </view>
+</view>

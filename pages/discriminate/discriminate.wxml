@@ -1,0 +1,6 @@
+<view id='discriminate'>
+    <image class='discriminate-img' src="{{list2[0].pic}}" mode="aspectFill"></image>
+    <view class='setthree'>
+        <text>{{list2[0].content}}</text>
+    </view>
+</view>    

@@ -1,0 +1,20 @@
+<view id='solve'> 
+    <image src="{{imgUrl}}" mode="aspectFill" class='solve'></image>
+
+    <!--解决方案-->
+    <view class='prodis'>
+        <text>【解决方案】</text>
+    </view>
+    
+    <scroll-view class='solve-los'  scroll-y="true" bindscrolltolower="searchScrollLower" lower-threshold="50"px style='height:400px'>
+        <navigator class='solve-tao' url="../setmeal/setmeal?index={{item.id}}" wx:for='{{dongxi}}' wx:key='index'>
+            <image src="{{item.pic}}" mode="aspectFill"></image>
+            <view class='listext2'>
+                <text class='listext-t'>{{item.title}}</text>
+                <text class='listext-b'>{{item.content}}</text>
+            </view>
+        </navigator>
+        <view class="graphics-none" wx-if="{{searchLoading}}">上拉加载更多数据</view>
+        <view class="graphics-none" wx-if="{{!searchLoading}}">没有更多数据了~</view>
+    </scroll-view>        
+</view>       

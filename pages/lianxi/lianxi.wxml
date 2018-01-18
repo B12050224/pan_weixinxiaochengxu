@@ -1,0 +1,22 @@
+<view id='control'>
+    <view class='contact'>
+        <text class='contact-con'>CONTACT</text>
+        <text class='contact-tact'>US</text>
+    </view>
+    <image src="../../images/lianxi.png" alt="" class='control-img'></image>
+    <view class='control-main clearfix'>
+        <view class='control-main-xinxi clearfix'>
+            <!--<image src="../../images/linkman.png" alt=""></image>-->
+            <text wx-if="{{!flag}}" decode="{{true}}" space="{{true}}">联系人:&nbsp;&nbsp;&nbsp;&nbsp;{{dataList.contact}}</text>
+        </view>
+        <view class='control-main-xinxi clearfix'>
+            <!--<image src="../../images/handset.png" alt=""></image>-->
+            <text wx-if="{{!flag}}" decode="{{true}}" space="{{true}}">手机:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{dataList.mobile}}</text>
+        </view>
+        <view class='control-main-xinxi clearfix'>
+            <!--<image src="../../images/lane.png" alt=""></image>-->
+            <text wx-if="{{!flag}}" decode="{{true}}" space="{{true}}">地址:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{dataList.address}}</text>
+        </view>
+    </view>
+    <map id="map" longitude="{{dataList.longitude}}" latitude="{{dataList.latitude}}" scale="18" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+</view>

@@ -1,0 +1,20 @@
+<view id='product'>
+    <view class='search'>
+        <view class='search-l'>产品</view>
+        <view class='search-cen'>
+            <input type="text" bindinput ="words" class='search-key' placeholder='请输入关键字'/>
+        </view>
+        <button class='search-hunt' bindtouchstart="searchNeirongStart" bindtouchend='searchNeirongEnd'>搜索</button>
+    </view>
+
+    <scroll-view class='graphics' scroll-y="true" bindscrolltolower="searchScrollLower" style='height:500px'>
+        <view class='graphics-baoguo clearfix'>
+            <navigator url="../detail/detail?index={{item.id}}" class='sketch' wx:for='{{dongxi}}' wx:key='index'>
+                <image src="{{item.pic}}" alt=""></image>
+                <text>{{item.content}}</text>
+            </navigator>
+        </view>    
+        <view class="graphics-none" style="{{searchLoading == true ? 'display:block' : 'display:none'}}">上拉加载更多数据</view>
+        <view class="graphics-none1" style="{{mark == true ? 'display:block' : 'display:none'}}">没有更多数据了~</view>
+    </scroll-view>    
+</view>    
